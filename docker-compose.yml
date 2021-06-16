@@ -3,7 +3,7 @@ version: '3.7'
 services:
 
   example:
-    container_name: angularTest
+    container_name: my-app
     build:
       context: .
       dockerfile: Dockerfile
@@ -11,4 +11,4 @@ services:
       - '.:/app'
       - '/app/node_modules'
     ports:
-      - '4201:4200'
+      - '4200:4200'
